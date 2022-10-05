@@ -1,0 +1,50 @@
+import java.util.Scanner;
+public class CrazyHamsterDay
+{
+  public static void main(String[] args)
+  {
+    if(args.length != 0 && args[0].equals("-help")) {
+      displayHelp();
+    }
+    //for beginning of code
+    else{
+    Scanner input = new Scanner(System.in);
+    System.out.println("You are a hamster that is a criminal mastermind. You're planned a mall heist for years.");
+    System.out.println("Do you want to go through with the heist? Type Y/N");
+    String yesOrNoMall="";
+    yesOrNoMall = input.next(); //get if player says yes or no
+    if(yesOrNoMall.equals("Y") || yesOrNoMall.equals("y"))
+    {
+      robIceAndPetStores();
+    }
+    else if(yesOrNoMall.equals("N") || yesOrNoMall.equals("n"))
+    //user refuses to go to the mall
+    {
+      System.out.println("You are going to miss out on a lot of fun.");
+    }
+    else
+    //if the user puts in unvalid input
+    {
+      System.out.println("That is not a valid value!");
+    }
+   }
+ }
+  public static void displayHelp() {
+    System.out.println("This message is displayed when " +
+                       "you run this program with -help " +
+                       "option.");
+  }
+  public static void robIceAndPetStores()
+  {
+
+  }
+  public static void bakeryAndGym()
+  {
+
+  }
+  public static void clothingStore()
+  {
+
+  }
+
+}
